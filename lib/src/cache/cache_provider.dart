@@ -73,7 +73,5 @@ abstract class CacheProvider {
 
   Future<void> removeAll();
 
-  Future<void> setObject<T>(String key, T value);
-
   T getValue<T>(String key, T defaultValue);
 }
