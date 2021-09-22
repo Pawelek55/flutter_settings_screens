@@ -57,13 +57,13 @@ abstract class CacheProvider {
 
   bool? getBool(String key);
 
-  Future<void> setInt(String key, int? value, {int? defaultValue});
+  Future<bool> setInt(String key, int? value, {int? defaultValue});
 
-  Future<void> setString(String key, String? value, {String? defaultValue});
+  Future<bool> setString(String key, String? value, {String? defaultValue});
 
-  Future<void> setDouble(String key, double? value, {double? defaultValue});
+  Future<bool> setDouble(String key, double? value, {double? defaultValue});
 
-  Future<void> setBool(String key, bool? value, {bool? defaultValue});
+  Future<bool> setBool(String key, bool? value, {bool? defaultValue});
 
   bool? containsKey(String key);
 
