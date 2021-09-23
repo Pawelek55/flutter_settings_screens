@@ -112,7 +112,6 @@ class Settings {
     if (value == null) {
       return _cacheProvider?.remove(key);
     }
-    await _cacheProvider?.setObject<T>(key, value);
     if (notify) {
       _notifyGlobally<T>(key, value);
     }
