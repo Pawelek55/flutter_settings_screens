@@ -226,6 +226,7 @@ class ExpandableSettingsTile extends StatelessWidget {
       title: title,
       subtitle: subtitle,
       enabled: enabled,
+      expanded: expanded,
       child: SettingsContainer(
         children: children,
       ),
@@ -383,7 +384,7 @@ class SettingsGroup extends StatelessWidget {
 
   TextStyle groupStyle(BuildContext context) {
     return TextStyle(
-      color: Theme.of(context).accentColor,
+      color: Theme.of(context).colorScheme.secondary,
       fontSize: 12.0,
       fontWeight: FontWeight.bold,
     );
