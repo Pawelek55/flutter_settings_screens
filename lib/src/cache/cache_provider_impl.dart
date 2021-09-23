@@ -38,23 +38,23 @@ class SharePreferenceCache extends CacheProvider {
   }
 
   @override
-  Future<void> setBool(String key, bool? value, {bool? defaultValue = false}) {
+  Future<bool> setBool(String key, bool? value, {bool? defaultValue = false}) {
     return _preferences.setBool(key, value ?? defaultValue!);
   }
 
   @override
-  Future<void> setDouble(String key, double? value,
+  Future<bool> setDouble(String key, double? value,
       {double? defaultValue = 0.0}) {
     return _preferences.setDouble(key, value ?? defaultValue!);
   }
 
   @override
-  Future<void> setInt(String key, int? value, {int? defaultValue = 0}) {
+  Future<bool> setInt(String key, int? value, {int? defaultValue = 0}) {
     return _preferences.setInt(key, value ?? defaultValue!);
   }
 
   @override
-  Future<void> setString(String key, String? value, {String? defaultValue}) {
+  Future<bool> setString(String key, String? value, {String? defaultValue}) {
     return _preferences.setString(key, value ?? defaultValue!);
   }
 
